@@ -3,7 +3,20 @@
 		<body>
 			<script src="jquery-1.11.0.min.js"></script>
 			<script>
-				document.write("HELLOOOOO!!!");
+				// here we load the XML
+				var client = new XMLHttpRequest();
+				client.open("GET", "https://github.com/boothfilmfestival/boothfilmfestival.github.io/blob/master/zoop.txt", false);
+				client.send(null);
+				document.write(client.responseText);
+			
+				
+			
+
+				// then we read in all of the values that have already been selected
+
+				// then we fill in those values
+
+				// we need some validation or checking so that the user cannot select the same seat
 			</script>
 			<div class="page-title">Booth Film Festival</div>
 
