@@ -5,9 +5,12 @@
 			<script>
 				// here we load the XML
 				var client = new XMLHttpRequest();
-				client.open("GET", "https://github.com/boothfilmfestival/boothfilmfestival.github.io/blob/master/zoop.txt", false);
+				client.open("GET", "https://raw.githubusercontent.com/boothfilmfestival/boothfilmfestival.github.io/master/zoop.txt", false);
 				client.send(null);
+				client.onreadystatechange = function() {
+
 				document.write(client.responseText);
+			}
 			
 				
 			
