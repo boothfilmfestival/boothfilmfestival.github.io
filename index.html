@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		<body>
 			<script src="jquery-1.11.0.min.js"></script>
@@ -7,6 +7,7 @@
 				var client = new XMLHttpRequest();
 				client.open("GET", "https://raw.githubusercontent.com/boothfilmfestival/boothfilmfestival.github.io/master/zoop.txt", false);
 				client.send(null);
+				document.write(client.responseText);
 				client.onreadystatechange = function() {
 
 				document.write(client.responseText);
