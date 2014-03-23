@@ -1,0 +1,16 @@
+<registrations>
+	<registration>
+		<name>Pachelbel Canon</name>
+		<seat>A2</seat>
+		<cnet>pcanon</cnet>
+		<email>pcanon@uchicago.edu</email>
+		<affiliation>Volunteer</affiliation>
+	</registration>
+	<registration>
+		<name>Johann Hassler</name>
+		<seat>A7</seat>
+		<cnet>jhas</cnet>
+		<email>jhas@uchicago.edu</email>
+		<affiliation>Volunteer</affiliation>
+	</registration>
+</registrations>
