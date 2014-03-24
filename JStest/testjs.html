@@ -1,0 +1,35 @@
+<!DOCType HTML>
+<html>
+<head>
+	<title>Yo, this is a test, yo</title>
+</head>
+	<body>
+        <script type="text/javascript" src="jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+			//document.write("This text was written using javascript yo!\r\n\n");
+			var json = '{"result":true,"count":1}',
+				json2 = '{"menu": {"id": "file","value": "File", "popup": {"menuitem": [{"value": "New", "onclick": "CreateNewDoc()"}, {"value": "Open", "offclick": "OpenDoc()"}, {"value": "Close", "onclick": "CloseDoc()"}]}}}',
+    			obj = JSON.parse(json);
+    		var	obj2 = JSON.parse(json2);
+    		//document.write(json);
+    		//document.write(json2);
+    		delete obj.result;
+    		function storydelete(arr, property) {	
+    			//document.write(obj2.menu;
+    			for (var i = 0; i < arr.length ; i++)
+    			{
+    				var cur = arr[i];
+    				if(typeof(cur.property) == "undefined")
+    				{
+    					document.write(i);
+    					document.write("We found an onclick here!\n");
+    					arr.splice(i,1);
+    				}
+    			}
+    		}
+    		storydelete(obj2.menu.popup.menuitem, "offclick");
+    		//document.write(JSON.stringify(obj));
+    		document.write(JSON.stringify(obj2));
+		</script>
+	</body>
+</html>
